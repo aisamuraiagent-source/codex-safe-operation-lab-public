@@ -1,4 +1,4 @@
-# Codex Safe Operation Lab
+﻿# Codex Safe Operation Lab
 
 Laboratorio local para operacao segura com OpenAI Codex CLI no Windows, com sandbox, aprovacao humana, regras locais, painel estatico e triagem defensiva nao intrusiva.
 
@@ -64,7 +64,7 @@ Arquivos:
 - `DOTNET_PROCESS_REVIEW.md`
 - `DEFENSIVE_TRIAGE_SUMMARY.md`
 
-Esta trilha mostra uma triagem defensiva local e nao intrusiva no Windows, usando comandos nativos de leitura e relatorios Markdown.
+Esta trilha mostra uma triagem defensiva local e nao intrusiva no Windows, usando comandos nativos de leitura e uma versao publica sanitizada do resumo defensivo.
 
 O escopo foi limitado de forma explicita: sem Nmap, sem internet, sem alteracao de configuracao, sem encerramento de processos, sem exploracao, sem brute force, sem fuzzing e sem varredura ativa de rede.
 
@@ -140,4 +140,5 @@ Nao ha dependencias, instalacao de pacotes, build, servidor local ou acesso a in
 - Projeto local versionado em Git.
 - Primeiro commit realizado.
 - Pronto para publicacao futura, se desejado.
+
 
