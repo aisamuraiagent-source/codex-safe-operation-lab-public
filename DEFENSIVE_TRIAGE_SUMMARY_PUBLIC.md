@@ -1,4 +1,4 @@
-# DEFENSIVE TRIAGE SUMMARY - PUBLIC SANITIZED VERSION
+﻿# DEFENSIVE TRIAGE SUMMARY - PUBLIC SANITIZED VERSION
 
 Data: 2026-06-11
 Host: [REDACTED_LOCAL_HOST]
@@ -47,7 +47,6 @@ Restricoes mantidas:
 
 ### Etapa 1: inventario local de rede
 
-Relatorio interno de origem: `NETWORK_INVENTORY.md`
 
 Comandos documentados:
 
@@ -71,11 +70,9 @@ Objetivo:
 
 ### Etapa 2: correlacao de conexoes TCP com processos
 
-Relatorio interno de origem: `NETWORK_PROCESS_CORRELATION.md`
 
 Comandos documentados:
 
-- `Get-Content -LiteralPath .\NETWORK_INVENTORY.md`
 - `Get-NetTCPConnection -State Established`
 - `Get-Process`
 - `tasklist`
@@ -86,12 +83,9 @@ Objetivo:
 
 ### Etapa 3: revisao especifica do `dotnet.exe`
 
-Relatorio interno de origem: `DOTNET_PROCESS_REVIEW.md`
 
 Comandos documentados:
 
-- `Get-Content -LiteralPath .\NETWORK_INVENTORY.md`
-- `Get-Content -LiteralPath .\NETWORK_PROCESS_CORRELATION.md`
 - `Get-Process dotnet -ErrorAction SilentlyContinue`
 - `Get-CimInstance Win32_Process -Filter "name = 'dotnet.exe'"`
 - `Get-CimInstance Win32_Process` com filtros especificos para processos observados;

@@ -59,10 +59,7 @@ Ela documenta o uso de uma pasta segura, regras locais, sandbox, aprovacao human
 
 Arquivos:
 
-- `NETWORK_INVENTORY.md`
-- `NETWORK_PROCESS_CORRELATION.md`
-- `DOTNET_PROCESS_REVIEW.md`
-- `DEFENSIVE_TRIAGE_SUMMARY.md`
+- `DEFENSIVE_TRIAGE_SUMMARY_PUBLIC.md`
 
 Esta trilha mostra uma triagem defensiva local e nao intrusiva no Windows, usando comandos nativos de leitura e uma versao publica sanitizada do resumo defensivo.
 
@@ -104,10 +101,7 @@ Nao ha dependencias, instalacao de pacotes, build, servidor local ou acesso a in
 - `index.html`: prova que existe uma interface local executavel diretamente no navegador.
 - `styles.css`: concentra a camada visual responsiva do painel.
 - `app.js`: implementa a interacao do painel e persistencia local via `localStorage`.
-- `NETWORK_INVENTORY.md`: registra inventario local de rede, adaptadores, rotas, vizinhos, conexoes TCP, DNS e firewall.
-- `NETWORK_PROCESS_CORRELATION.md`: correlaciona conexoes TCP estabelecidas com processos locais.
-- `DOTNET_PROCESS_REVIEW.md`: revisa caminho, assinatura, cadeia de processo e contexto do `dotnet.exe`.
-- `DEFENSIVE_TRIAGE_SUMMARY.md`: consolida os achados, classificacoes, escopo, limitacoes e conclusao defensiva.
+- `DEFENSIVE_TRIAGE_SUMMARY_PUBLIC.md`: consolida a triagem defensiva em versao publica sanitizada, sem expor hostname, usuario local, IPs locais reais, gateway, DNS, PIDs, caminhos pessoais ou detalhes sensiveis de rede.
 
 ## 8. Limitacoes reais
 
@@ -140,5 +134,6 @@ Nao ha dependencias, instalacao de pacotes, build, servidor local ou acesso a in
 - Projeto local versionado em Git.
 - Primeiro commit realizado.
 - Pronto para publicacao futura, se desejado.
+
 
 
