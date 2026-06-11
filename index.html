@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel Codex Teste</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel" aria-labelledby="panel-title">
+        <div class="panel-header">
+          <p class="eyebrow">Ambiente local</p>
+          <h1 id="panel-title">Painel Codex Teste</h1>
+          <p class="summary">Registro manual de configuração, sandbox e escrita controlada.</p>
+        </div>
+
+        <div class="status-grid" aria-label="Status do ambiente">
+          <article class="status-card" data-status-card>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">Pendente</span>
+            <h2>Instalação conferida</h2>
+            <p>Projeto estático carregado sem dependências externas.</p>
+          </article>
+
+          <article class="status-card" data-status-card>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">Pendente</span>
+            <h2>Sandbox conferido</h2>
+            <p>Arquivos criados somente dentro da pasta autorizada.</p>
+          </article>
+
+          <article class="status-card" data-status-card>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">Pendente</span>
+            <h2>Escrita conferida</h2>
+            <p>Permissão local registrada pela criação deste painel.</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button id="validate-button" type="button">Registrar conferência</button>
+        </div>
+
+        <section class="log-panel" aria-labelledby="log-title">
+          <h2 id="log-title">Log</h2>
+          <div id="log-output" class="log-output" role="log" aria-live="polite">
+            Aguardando conferência manual.
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
